@@ -76,10 +76,6 @@ class Maze(object):
         tk.resizable(False, False)
         c = Canvas(tk, width=tk_width, height=tk_height)
         c.pack()
-        def rebuild_maze(event):
-            tk.destroy()
-            self.gui_maze()
-        tk.bind("<Button-1>", rebuild_maze)
 
         self.init_maze()
         self.generate_maze()
